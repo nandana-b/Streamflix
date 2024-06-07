@@ -1,0 +1,448 @@
+/* Reset default styles for all elements */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease; /* Add transition effect for all properties */
+}
+
+/* General styling for the body */
+body {
+  height: 100vh; /* Set height to full viewport height */
+  background: url('./images/bg.png') no-repeat fixed; /* Use background image, prevent repeat, and fix position */
+  background-size: cover; /* Cover the entire viewport */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center align items horizontally */
+  font-family: 'Montserrat', sans-serif; /* Use Montserrat font for text */
+}
+
+/* Header styling */
+header {
+  width: 100%;
+  transition: all 0.3s ease; /* Add transition effect for all properties */
+}
+
+/* Styling for top navigation */
+.top-nav {
+  display: flex;
+  justify-content: space-between; /* Space out items evenly */
+  align-items: center;
+  padding: 1em 2em; /* Add padding around content */
+  background-color: #1f1e1e; /* Set background color */
+  transition: all 0.3s ease; /* Add transition effect for all properties */
+}
+
+/* Styling for user controls */
+.user-controls {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease; /* Add transition effect for all properties */
+}
+
+/* Logo styling */
+.logo {
+  font-family: 'Special Elite', cursive;
+  font-size: 1.5em;
+  color: #fffbf2; /* Set font color */
+  font-weight: 600;
+  transition: all 0.3s ease; /* Add transition effect for all properties */
+}
+
+/* Logo link styling */
+.logo a {
+  text-decoration: none;
+  color: #fffbf2 !important;
+  transition: all 0.3s ease; /* Add transition effect for all properties */
+}
+
+/* Welcome message styling */
+.wlcm {
+  margin-right: 2vw;
+  transition: all 0.3s ease; /* Add transition effect for all properties */
+}
+
+/* Logout button styling */
+.logout {
+  background-color: #c52d24; /* Set background color */
+  border: none; /* Remove border */
+  cursor: pointer; /* Set cursor to pointer */
+  z-index: 1; /* Set z-index */
+  padding: 10px; /* Add padding */
+  border-radius: 5px; /* Add border radius */
+  transition: all 0.3s ease; /* Add transition effect for all properties */
+}
+
+/* Tab navigation styling */
+.tab-nav {
+  background-color: #c52d24; /* Set background color */
+  transition: all 0.3s ease; /* Add transition effect for all properties */
+}
+
+/* Tab links styling */
+.tab-links {
+  display: flex; /* Display flex to align items */
+  justify-content: center; /* Center align items horizontally */
+  gap: 2em; /* Set gap between tab links */
+  padding: 1em 0; /* Add padding */
+  transition: all 0.3s ease; /* Add transition effect for all properties */
+}
+
+/* Styling for list items in tab navigation */
+.tab-links li {
+  list-style: none; /* Remove list bullet points */
+  transition: all 0.3s ease; /* Add transition effect for all properties */
+}
+
+/* Styling for tab links */
+.tab-links a {
+  color: #fffbf2; /* Set text color */
+  text-decoration: none; /* Remove text decoration */
+  font-size: 1em; /* Set font size */
+  transition: color 0.3s; /* Add transition effect for color change */
+}
+
+/* Hover effect for tab links */
+.tab-links a:hover {
+  color: #1f1e1e; /* Change text color on hover */
+  transition: all 0.3s ease; /* Add transition effect for all properties */
+}
+
+/* Container styling */
+.container {
+  width: 90vw; /* Set container width to 90% of viewport width */
+  max-width: 1200px; /* Set maximum width */
+  padding: 2em; /* Add padding */
+  transition: all 0.3s ease; /* Add transition effect for all properties */
+}
+
+/* Styling for headings */
+h1 {
+  font-family: 'Special Elite', cursive;
+  color: #fffbf2; /* Set text color */
+  text-align: center; /* Center align text */
+  margin-bottom: 1em; /* Add margin at the bottom */
+  transition: all 0.3s ease; /* Add transition effect for all properties */
+}
+
+/* Grid layout for movie display */
+.movie-grid {
+  display: grid; /* Use grid display */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Auto-fill columns with minimum width of 200px */
+  gap: 1rem; /* Set gap between grid items */
+  transition: all 0.3s ease; /* Add transition effect for all properties */
+}
+
+/* Styling for movie cards */
+.movie-card {
+  background-color: #333; /* Set background color */
+  color: #fff; /* Set text color */
+  padding: 1rem; /* Add padding */
+  border-radius: 10px; /* Add border radius */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add shadow effect */
+  transition: 0.3s; /* Smooth transition */
+  cursor: pointer; /* Set cursor to pointer */
+  text-align: center; /* Center align text */
+}
+
+/* Hover effect for movie cards */
+.movie-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
+  transform: scale(1.05); /* Scale up on hover */
+  transition: all 0.3s ease; /* Add transition effect for all properties */
+}
+
+/* Styling for images within movie cards */
+.movie-card img {
+  width: 100%; /* Set image width to 100% of its container */
+  height: auto; /* Automatically adjust height */
+  border-radius: 5px; /* Add border radius */
+  margin-bottom: 0.5em; /* Add margin at the bottom */
+  transition: all 0.3s ease; /* Add transition effect for all properties */
+}
+
+/* Styling for headings within movie cards */
+.movie-card h2 {
+  font-size: 1.1em; /* Set font size */
+  font-weight: 500; /* Set font weight */
+  transition: all 0.3s ease; /* Add transition effect for all properties */
+}
+
+/* Modal styling */
+.modal {
+  display: none; /* Hide modal by default */
+  position: fixed; /* Position fixed to overlay on the screen */
+  z-index: 1; /* Set z-index */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Allow scrolling if content exceeds modal height */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  backdrop-filter: blur(5px); /* Apply blur effect */
+  transition: all 0.3s ease; /* Add transition effect for all properties */
+}
+
+/* Keyframes animation for modal */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start with opacity 0 */
+  }
+  to {
+    opacity: 1; /* Fade in to full opacity */
+  }
+}
+
+/* Styling for modal content */
+.modal-content {
+  background-color: #fff; /* Set background color */
+  margin: 10% auto; /* Center modal vertically and horizontally */
+  padding: 20px; /* Add padding */
+  border-radius: 10px; /* Add border radius */
+  display: flex; /* Use flexbox */
+  flex-direction: row; /* Arrange items horizontally */
+  align-items: stretch; /* Stretch items vertically */
+  gap: 10px; /* Set gap between items */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+  max-width: 80%; /* Set maximum width */
+  overflow: auto; /* Allow scrolling if content exceeds modal height */
+  max-height: 80vh; /* Set maximum height */
+  width: calc(80vh * 1.5); /* Calculate width based on height */
+  height: auto; /* Automatically adjust height */
+  margin: 10% auto; /* Center modal vertically and horizontally */
+  transition: all 0.3s ease; /* Add transition effect for all properties */
+}
+
+/* Styling for images within modal content */
+.modal-content img {
+  flex: 1; /* Take remaining space */
+  height: auto; /* Automatically adjust height */
+  max-height: 100%; /* Set maximum height */
+  max-width: 100%; /* Set maximum width */
+  border-radius: 10px; /* Add border radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+  transition: all 0.3s ease; /* Add transition effect for all properties */
+}
+
+/* Close button styling */
+.close {
+  color: #aaa; /* Set text color */
+  font-size: 28px; /* Set font size */
+  font-weight: bold; /* Set font weight */
+  cursor: pointer; /* Set cursor to pointer */
+  transition: color 0.3s ease; /* Smooth color transition */
+  position: absolute; /* Position absolute */
+  top: 10px; /* Set distance from top */
+  right: 20px; /* Set distance from right */
+  z-index: 9999; /* Set z-index to appear on top */
+}
+
+/* Hover effect for close button */
+.close:hover,
+.close:focus {
+  color: black; /* Change color on hover/focus */
+  text-decoration: none; /* Remove default text decoration */
+  cursor: pointer; /* Set cursor to pointer */
+}
+
+/* Styling for movie details */
+.movie-details {
+  padding: 20px; /* Add padding */
+  flex: 1; /* Take remaining space */
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Arrange items vertically */
+  gap: 10px; /* Set gap between items */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+/* Styling for modal title */
+#modal-title {
+  font-family: 'Special Elite', cursive; /* Set font family */
+  font-weight: 500; /* Set font weight */
+  font-size: 2em; /* Set font size */
+  margin-bottom: 5px; /* Add margin at the bottom */
+  padding-top: 20px; /* Add padding at the top */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+/* Styling for modal rating */
+#modal-rating {
+  font-size: 1.1em; /* Set font size */
+  margin-bottom: 5px; /* Add margin at the bottom */
+  font-style: italic; /* Set font style to italic */
+  padding-top: 20px; /* Add padding at the top */
+  padding-bottom: 40px; /* Add padding at the bottom */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+/* Styling for modal overview */
+#modal-overview {
+  font-size: 1em; /* Set font size */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+/* Footer styling */
+footer {
+  width: 100%; /* Set footer width to full viewport width */
+  padding: 20px 0; /* Add padding top and bottom */
+  text-align: center; /* Center-align text */
+  background: url('./styles/image/bg.png'); /* Use background image */
+  color: #fff; /* Set text color */
+  margin: 0; /* Remove default margin */
+  position: relative; /* Set position to relative */
+  border-top: 1px solid #444; /* Add top border */
+  box-shadow: 0px -15px 15px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+  border-top-left-radius: 25px; /* Rounded top-left corner */
+  border-top-right-radius: 25px; /* Rounded top-right corner */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+/* Styling for paragraph within footer */
+footer p {
+  margin-top: 20px; /* Add top margin */
+  color: #1f1e1e; /* Set text color */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+/* Styling for footer content */
+.footer-content {
+  max-width: 1200px; /* Set maximum width */
+  margin: 0 auto; /* Center align horizontally */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Distribute items along the main axis */
+  align-items: center; /* Center align items vertically */
+  padding: 0 20px; /* Add horizontal padding */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+/* Styling for paragraphs within footer content */
+.footer-content p {
+  margin: 10px 0; /* Set margin top and bottom */
+  text-shadow: 1px 1px 2px #c52d24; /* Add shadow effect */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+/* Styling for horizontal line */
+.horizontal-line {
+  border-top: 1px solid #8d8a8a; /* Add top border */
+  width: 100%; /* Set width */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+/* Styling for left-aligned content */
+.left-content {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align items to the start */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+/* Styling for footer links */
+.footer-links {
+  display: flex; /* Use flexbox for layout */
+  gap: 20px; /* Set gap between items */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+/* Styling for links within footer */
+.footer-links a {
+  color: #1f1e1e; /* Set link color */
+  text-shadow: 1px 1px 2px #c52d24; /* Add shadow effect */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.1em; /* Set font size */
+  transition: color 0.3s ease; /* Add transition effect */
+  margin-top: 20px; /* Add top margin */
+}
+
+/* Hover effect for footer links */
+.footer-links a:hover {
+  color: #c52d24; /* Change color on hover */
+}
+
+/* Styling for footer contact */
+.footer-contact {
+  margin-top: 5px; /* Add top margin */
+  transition: all 0.3s; /* Smooth transition for all properties */
+}
+
+/* Styling for footer logo */
+.fLogo {
+  padding-top: 20px; /* Add top padding */
+  font-family: 'Special Elite', cursive; /* Set font family */
+  font-size: 3em; /* Set font size */
+  color: #fffbf2; /* Set text color */
+  font-weight: 600; /* Set font weight */
+  text-shadow: 2px 2px 4px #1f1e1e; /* Add shadow effect */
+  padding-bottom: 3vh; /* Add bottom padding */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+/* Styling for footer contact links */
+.footer-contact a {
+  color: #c52d24; /* Set link color */
+  text-decoration: none; /* Remove underline */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+/* Hover effect for footer contact links */
+.footer-contact a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Hover effect for back-to-top button */
+.back-to-top:hover {
+  background-color: #ff4c39; /* Change background color on hover */
+  transform: scale(1.1); /* Scale up on hover */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 900px) {
+  /* Adjustments for footer content on smaller screens */
+  .footer-content {
+    padding: 0 10px; /* Reduce horizontal padding */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Align items to the center */
+    text-align: center; /* Center-align text */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+  }
+
+  .footer-content img{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* Adjustments for footer links on smaller screens */
+  .footer-links {
+    margin-top: 20px; /* Add margin top */
+    gap: 10px; /* Reduce gap between items */
+    justify-content: center; /* Center-align items horizontally */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+  }
+
+  /* Adjustments for left-aligned content on smaller screens */
+  .left-content {
+    align-items: center; /* Align items to the center */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+  }
+}
+
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 900px) {
+  /* Adjustments for modal content on smaller screens */
+  .modal-content {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items horizontally */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+  }
+
+  /* Adjustments for images within modal content on smaller screens */
+  .modal-content img {
+    max-width: 100%; /* Set maximum width */
+    max-height: 50vh; /* Set maximum height */
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+  }
+}
